@@ -24,12 +24,6 @@ export default function Achievements() {
                 <h3 className="text-xl font-bold mb-2 text-green-400">{achievement.title}</h3>
                 <p className="text-sm text-gray-500 mb-3">{achievement.organization}</p>
                 <p className="text-gray-400 text-sm mb-4">{achievement.description}</p>
-                <a 
-                  href={achievement.link}
-                  className="text-green-500 text-sm hover:text-green-400 transition-colors"
-                >
-                  VIEW DETAILS →
-                </a>
               </div>
             </div>
           ))}
@@ -70,14 +64,6 @@ export default function Achievements() {
                   <p className="text-gray-200">{cert.name}</p>
                   <p className="text-xs text-gray-500">{cert.issuer} • {cert.year}</p>
                 </div>
-                <a
-                  href={cert.verifyUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-xs text-green-500 hover:text-green-400 transition-colors"
-                >
-                  VERIFY
-                </a>
               </div>
             ))}
           </div>
